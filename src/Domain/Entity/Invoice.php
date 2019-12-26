@@ -27,9 +27,13 @@ class Invoice extends AbstractEntity
         return $this;
     }
 
+    public function getInvoiceDate(){
+        return $this->invoiceDate;
+    }
+
     public function getTotal()
     {
-        return $this->getTotal;
+        return $this->total;
     }
 
     public function setTotal($total)
