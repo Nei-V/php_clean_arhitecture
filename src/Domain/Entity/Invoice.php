@@ -1,0 +1,40 @@
+<?php
+
+namespace CleanPhp\Invoicer\Domain\Entity;
+
+use DateTime;
+
+class Invoice extends AbstractEntity
+{
+    protected $order;
+    protected $invoiceDate;
+    protected $total;
+
+    public function getOrder()
+    {
+        return $this->order;
+    }
+
+    public function setOrder($order)
+    {
+        $this->order = $order;
+        return $this;
+    }
+
+    public function setInvoiceDate(DateTime $invoiceDate)
+    {
+        $this->invoiceDate = $invoiceDate;
+        return $this;
+    }
+
+    public function getTotal()
+    {
+        return $this->getTotal;
+    }
+
+    public function setTotal($total)
+    {
+        $this->total = $total;
+        return $this;
+    }
+}
