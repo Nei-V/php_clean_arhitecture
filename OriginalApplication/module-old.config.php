@@ -1,6 +1,6 @@
 <?php
 
-namespace Invoicer;
+namespace Application;
 
 use Zend\ServiceManager\Factory\InvokableFactory;
 
@@ -12,7 +12,7 @@ return [
     ],
     'view_manager' => [
         'template_path_stack' => [
-            'invoicer' => __DIR__ . '/../view',
+            'application' => __DIR__ . '/../view',
         ],
     ],
 ];
